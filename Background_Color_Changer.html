@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding:20px 100px;
+    }
+    h1{
+        text-align: center;
+        text-decoration: underline;
+    }
+    img{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    p{
+        font-size: 18px;
+        text-align: justify;
+    }
+    .btn{
+        width: 20px;
+        height: 20px;
+        display:inline-block;
+        border:solid black 2px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    #white{
+        background-color: rgb(241, 243, 245);
+    }
+    #aqua{
+        background-color: aqua;
+    }
+    #violet{
+        background-color: violet;
+    }
+    #black{
+        background-color: black;
+    }
+    #color-switcher{
+        text-align: right;
+    }
+</style>
+<body>
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="onchangeBG('#ffffff')"></span>
+        <span class="btn" id="aqua" onclick="onchangeBG('#7fffd4')"></span>
+        <span class="btn" id="violet" onclick="onchangeBG('#ce9aff')"></span>
+        <span class="btn" id="black" onclick="onchangeBG('#000000')"></span>
+    </div>
+    <h1 class="text">About Us</h1>   
+    <img src="https://patonaconsultingcom.files.wordpress.com/2020/05/about-us-1.jpg?w=768&h=394" >
+    <p class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, aut. Nemo dolor unde modi architecto sed nisi eaque 
+        amet a quo ipsa! Eaque aliquam sit natus ea quas, non reprehenderit suscipit, quisquam reiciendis vel ut sapiente 
+        tempore saepe, sunt nobis quia deleniti ipsum perferendis! Voluptate, velit? Quam quidem animi sunt itaque veniam 
+        mollitia corrupti quis eveniet ea dicta. Aspernatur eaque quaerat placeat error voluptatem! Adipisci officiis culpa, 
+        quibusdam eaque provident nulla tenetur. Sunt quaerat natus odit, dolorem quisquam vitae at soluta, dolorum, explicabo 
+        enim porro dignissimos magni! Earum tempore et, laboriosam minus doloremque, dignissimos tempora dolorum dolore beatae 
+        est omnis voluptates incidunt voluptatem dolorem voluptatum libero praesentium temporibus cumque numquam sit quis molestiae? 
+        Accusamus voluptatibus laborum quo asperiores, nam itaque magni architecto corporis molestias ducimus nisi cupiditate 
+        voluptatem labore officia modi veritatis deleniti id nesciunt enim. Consequatur repudiandae repellat nobis, dolores, 
+        accusantium deleniti corporis dignissimos fugit facilis veniam, cupiditate sapiente maiores magnam itaque perspiciatis 
+        maxime. Maxime aperiam excepturi dolores, labore quo expedita ullam libero. Ratione eos nostrum expedita cupiditate 
+        fuga accusamus soluta vel nesciunt labore, a nisi quod assumenda aspernatur itaque illo, asperiores animi provident 
+        ab, officia dolore! Tenetur voluptates exercitationem maiores, incidunt quo obcaecati optio iusto? Neque exercitationem 
+        maiores voluptates similique rerum dolore a, in itaque fugiat consequatur. Ut aperiam labore blanditiis, adipisci 
+        vitae accusantium quo minima minus optio! Blanditiis aliquid quia sed. Debitis ipsam ex dignissimos culpa at provident 
+        distinctio aliquid in. Molestias nostrum qui nulla aspernatur libero accusamus eos magni minus ab eaque, perferendis 
+        aperiam dolorum, delectus ipsam excepturi commodi eius cupiditate! Quo culpa placeat accusamus quidem perspiciatis 
+        quam laboriosam minus sit, aut enim sequi eius alias dolorem tempora iste dignissimos deserunt? Inventore veniam 
+        molestias maxime tempore qui obcaecati quis alias ipsa ad vel explicabo, corrupti modi fugiat possimus dolorem 
+        asperiores porro commodi, enim facere quidem nam a. Hic quibusdam asperiores vel itaque quisquam esse minima similique.
+        Et omnis autem laudantium commodi ducimus ea porro sint odit ab sequi facilis placeat fugiat esse harum ad laboriosam 
+        consectetur debitis, repellendus quod asperiores. Ipsum fuga architecto aliquam eius dolorum non exercitationem, 
+        facilis molestias quis consequuntur alias id facere illo in dolore voluptatum odit veritatis earum ad nemo totam 
+        doloremque pariatur maiores magni? Odit molestias provident ipsam eveniet quibusdam, eius veritatis facilis 
+        exercitationem similique maxime fugit perferendis suscipit harum non minus modi beatae id debitis sunt magnam 
+        voluptatem culpa doloribus dolores possimus? Eum eveniet libero, dicta porro id a exercitationem autem ex hic enim, 
+        ratione cupiditate quidem numquam dolore corporis, inventore pariatur iste. Omnis dolorem nesciunt totam laborum 
+        asperiores incidunt. Minima, quibusdam accusantium sapiente doloribus provident nam laudantium natus. Rem minima, 
+        magnam iusto culpa dignissimos debitis quibusdam porro laudantium. Iure perferendis omnis consequuntur. Illo quo 
+        reiciendis nobis ratione ut neque sed modi dignissimos, veniam natus quam totam perferendis voluptas consequatur 
+        temporibus aliquid alias tenetur? Porro, reprehenderit tempore! Quod fugiat dolore provident voluptate, reiciendis 
+        doloribus quia accusamus dignissimos! Nesciunt asperiores est quam saepe dolorem iste enim. Soluta magni libero 
+        nobis obcaecati fuga. Fugit, aliquam! Neque necessitatibus id voluptatem recusandae autem asperiores.
+    </p>
+    <script>
+        function onchangeBG(color){
+            document.body.style.backgroundColor = color;
+            let txt = document.getElementsByClassName("text");
+            if(color == "#000000"){
+                for(let elm of txt){
+                    elm.style.color = "white";
+            }
+        }else{
+            for(let elm of txt){
+                    elm.style.color = "black";
+            }
+        }
+    }
+    </script>
+</body>
+</html>
